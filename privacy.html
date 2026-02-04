@@ -1,1 +1,189 @@
-<!doctype html><html><head><meta charset="utf-8"><title>Privacy Policy</title></head><body style="font-family:system-ui;margin:40px;"><h1>Privacy Policy</h1><p>This is a placeholder for the Privacy Policy of Postiz App (Zacmero).</p><p>Contact: z4cmero@gmail.com</p></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy | Sarah Nutri</title>
+  <meta name="description" content="Privacy Policy for Sarah Nutri" />
+
+  <style>
+    :root{
+      --bg:#0b0d12;
+      --card:rgba(255,255,255,.06);
+      --stroke:rgba(255,255,255,.12);
+      --text:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.70);
+      --accent:#9be7ff;
+      --max:920px;
+      --radius:18px;
+      --font:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--font);
+      color:var(--text);
+      padding:28px 16px;
+      line-height:1.55;
+      background:
+        radial-gradient(900px 600px at 10% 10%, rgba(155,231,255,.12), transparent 60%),
+        radial-gradient(900px 600px at 90% 30%, rgba(255,170,240,.10), transparent 55%),
+        var(--bg);
+    }
+    .wrap{
+      max-width:var(--max);
+      margin:0 auto;
+      background:linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.04));
+      border:1px solid var(--stroke);
+      border-radius:var(--radius);
+      padding:22px 20px;
+      box-shadow:0 14px 50px rgba(0,0,0,.55);
+    }
+    h1{margin:0 0 4px;font-size:26px}
+    h2{margin:22px 0 8px;font-size:18px}
+    p,li{color:var(--text)}
+    ul{margin:8px 0 0 18px}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .meta{color:var(--muted);font-size:14px;margin-bottom:18px}
+    .box{
+      margin:16px 0;
+      padding:14px;
+      border:1px solid var(--stroke);
+      border-radius:14px;
+      background:rgba(0,0,0,.16);
+      color:var(--muted);
+      font-size:14px;
+    }
+    .footer{
+      margin-top:22px;
+      color:var(--muted);
+      font-size:13px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <h1>Privacy Policy</h1>
+    <p class="meta">
+      For <strong id="appName"></strong> • Effective date:
+      <strong id="effectiveDate"></strong><br/>
+      Website: <a id="siteLink" target="_blank" rel="noopener"></a> •
+      Contact: <a id="emailLink"></a>
+    </p>
+
+    <div class="box">
+      <strong>Summary:</strong>
+      We collect only the minimum data necessary to operate the app and publish lifestyle and informational content.
+      We do not sell personal data. You may request access or deletion at any time by contacting us.
+    </div>
+
+    <h2>1) Who we are</h2>
+    <p>
+      <strong id="appNameInline"></strong> (“we”, “us”) is an application used to manage and publish lifestyle,
+      wellness, and informational content across social platforms. This policy explains how data is handled
+      when you use our services.
+    </p>
+
+    <h2>2) Information we collect</h2>
+    <ul>
+      <li><strong>Account identifiers:</strong> platform IDs or page IDs required to connect authorized accounts.</li>
+      <li><strong>Authorization tokens:</strong> access tokens used solely to perform actions you approve.</li>
+      <li><strong>Content metadata:</strong> timestamps, status, and technical data related to published posts.</li>
+      <li><strong>Usage and diagnostics:</strong> logs and error data used to maintain reliability and security.</li>
+      <li><strong>Technical data:</strong> IP address or user agent for security and abuse prevention.</li>
+    </ul>
+
+    <h2>3) Information we do not collect</h2>
+    <ul>
+      <li>Government identification numbers</li>
+      <li>Payment or credit card data</li>
+      <li>Private messages or personal communications</li>
+      <li>Medical records or sensitive health data</li>
+    </ul>
+
+    <h2>4) How we use information</h2>
+    <ul>
+      <li>To connect to third-party platforms you authorize</li>
+      <li>To publish and manage lifestyle content</li>
+      <li>To improve reliability, performance, and security</li>
+      <li>To comply with legal obligations</li>
+    </ul>
+
+    <h2>5) Data sharing</h2>
+    <p>
+      Data is shared only with third-party platforms you explicitly connect or with infrastructure providers
+      strictly required to operate the service. We do not sell personal information.
+    </p>
+
+    <h2>6) Analytics</h2>
+    <p>
+      Public pages may use minimal, privacy-respecting analytics to understand usage trends.
+      These analytics are used only in aggregate and do not identify individuals.
+    </p>
+
+    <h2>7) Data retention</h2>
+    <p>
+      Information is retained only for as long as necessary to provide the service or comply with legal requirements.
+      Authorization tokens may be revoked by you at any time.
+    </p>
+
+    <h2>8) Your rights</h2>
+    <p>
+      You may request access, correction, or deletion of your data by contacting us at
+      <a id="emailLinkInline"></a>.
+    </p>
+
+    <h2>9) Children’s privacy</h2>
+    <p>
+      This service is not intended for children under 13. We do not knowingly collect data from children.
+    </p>
+
+    <h2>10) Policy updates</h2>
+    <p>
+      This Privacy Policy may be updated periodically. Changes will be reflected on this page with an updated
+      effective date.
+    </p>
+
+    <h2>11) Contact</h2>
+    <p>
+      For any questions or requests, contact:
+      <a id="emailLinkFooter"></a>
+    </p>
+
+    <p class="footer">
+      © <span id="year"></span> <span id="appNameFooter"></span>. All rights reserved.
+    </p>
+  </main>
+
+  <!-- CONFIGURATION VARIABLES -->
+  <script>
+    const APP_NAME = "Sarah Nutri";
+    const SITE_URL = "https://zacmero.github.io/privacy.html";
+    const CONTACT_EMAIL = "sarahsmithnutri@gmail.com";
+    const EFFECTIVE_DATE = "2026-02-03";
+  </script>
+
+  <!-- AUTO-POPULATION -->
+  <script>
+    const setText = (id, value) => document.getElementById(id).textContent = value;
+    const setLink = (id, value, prefix = "") => {
+      const el = document.getElementById(id);
+      el.href = prefix + value;
+      el.textContent = value;
+    };
+
+    setText("appName", APP_NAME);
+    setText("appNameInline", APP_NAME);
+    setText("appNameFooter", APP_NAME);
+    setText("effectiveDate", EFFECTIVE_DATE);
+    setText("year", new Date().getFullYear());
+
+    setLink("siteLink", SITE_URL);
+    setLink("emailLink", CONTACT_EMAIL, "mailto:");
+    setLink("emailLinkInline", CONTACT_EMAIL, "mailto:");
+    setLink("emailLinkFooter", CONTACT_EMAIL, "mailto:");
+  </script>
+</body>
+</html>
