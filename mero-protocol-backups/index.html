@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mero Protocol Backups</title>
+  <meta name="description" content="Information about the private Mero Protocol Backups utility.">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #090b0f;
+      --panel: #121722;
+      --line: #263248;
+      --text: #edf2ff;
+      --muted: #a9b6ca;
+      --accent: #43e6c2;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background:
+        radial-gradient(circle at 15% 10%, rgba(67, 230, 194, .14), transparent 32rem),
+        linear-gradient(145deg, #07090d, var(--bg));
+      color: var(--text);
+      font: 16px/1.65 Georgia, "Times New Roman", serif;
+    }
+    main {
+      width: min(760px, 100%);
+      padding: clamp(28px, 6vw, 56px);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: color-mix(in srgb, var(--panel) 94%, transparent);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, .45);
+    }
+    h1 { margin: 0 0 8px; font-size: clamp(2rem, 6vw, 3.5rem); line-height: 1.05; }
+    h2 { margin-top: 2rem; font-size: 1.15rem; }
+    p { color: var(--muted); }
+    strong { color: var(--text); }
+    a { color: var(--accent); }
+    nav { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Mero Protocol Backups</h1>
+    <p>A private, owner-operated utility that stores encrypted Mero Protocol database backup artifacts in the owner's Google Drive.</p>
+
+    <h2>Google Drive access</h2>
+    <p>The utility requests the <strong>drive.file</strong> permission. It can access only files and folders created or explicitly opened through this application. It does not browse or read unrelated Drive content.</p>
+
+    <h2>Operation</h2>
+    <p>Backups are encrypted before upload. The utility is not offered to other users and does not sell, advertise with, or share Google user data.</p>
+
+    <nav aria-label="Legal information">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
+  </main>
+</body>
+</html>
